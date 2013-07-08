@@ -1,1 +1,4 @@
-styles.css
+assets/tmp/
+node_modules/
+fonts/
+.DS_Store

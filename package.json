@@ -1,0 +1,9 @@
+{
+  "name": "banterability.com",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt-contrib-stylus": "~0.5.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt": "~0.4.1"
+  }
+}
