@@ -1,0 +1,61 @@
+font_weight_light = 300
+font_weight_normal = 500
+font_weight_bold = 700
+transition_duration = 250ms
+
+transition()
+  -o-transition arguments
+  -moz-transition arguments
+  -webkit-transition arguments
+  transition arguments
+
+body
+  background-color: #F3F3F3
+  font-family: "Whitney A", "Whitney B"
+  font-weight: font_weight_normal
+  font-size: 18px
+  margin-top: 2rem;
+
+h1
+  color: #333
+  font-size: 1.5rem
+  font-style: normal
+  font-weight: font_weight_bold
+
+p
+  color: #666
+  font-size: 1rem
+  margin: 0
+
+ul
+  margin: .5rem 0 0 0
+  padding: 0
+  text-align: center
+
+li
+  color: #999
+  display: inline-block
+  font-size: 0.8rem
+  font-weight: font_weight_light
+  text-transform: lowercase
+
+
+  &::after
+    content: "•"
+
+  &:last-child::after
+    content: none
+
+a
+  color: #4181F3
+  transition color transition_duration ease
+
+  &:visited
+    color: #9C23EE
+
+  &:hover, &:active
+    color: #F3418F
+
+#container
+  margin: 0 auto
+  width: 290px
