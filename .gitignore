@@ -2,3 +2,4 @@ assets/tmp/
 node_modules/
 fonts/
 .DS_Store
+publish/
