@@ -4,11 +4,8 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON 'package.json'
     stylus:
       compile:
-        options:
-          paths: ['assets/styles/includes']
-          import: ['_mixins', '_variables']
         files:
-          'assets/tmp/app.css': ['assets/styles/*.styl']
+          'assets/tmp/style.css': ['assets/styles/*.styl']
     copyto:
       assets:
         files: [

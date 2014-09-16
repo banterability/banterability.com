@@ -2,10 +2,11 @@
   "name": "banterability.com",
   "version": "1.0.0",
   "devDependencies": {
-    "grunt-contrib-stylus": "~0.5.1",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-stylus": "~0.5.1",
     "grunt-copy-to": "0.0.4",
-    "stylus": "~0.33.1"
+    "nib": "^1.0.3",
+    "stylus": "^0.48.1"
   }
 }

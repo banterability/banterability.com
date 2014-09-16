@@ -1,0 +1,68 @@
+body
+  margin: 0
+
+.grid
+  margin: 0 auto
+  width: 860px
+
+.row
+  font-size: 0
+  min-height: 50px
+
+.column
+  display: inline-block
+  font-size: 16px
+  margin: 5px 10px
+  text-align: center
+  vertical-align: top
+
+  &:first-child
+    margin-left: 0
+
+  &:last-child
+    margin-right: 0
+
+.one-up
+  width: 200px
+
+.two-up
+  width: 420px
+
+.four-up
+  width: 860px
+
+// two-column viewport
+@media all and (max-width: 860px)
+  .grid
+    width: 420px
+
+  .two-up, .four-up
+    margin: 5px 0
+    width: 100%
+
+  .one-up
+    &:nth-child(2), &:nth-child(4)
+      margin-right: 0
+
+    &:nth-child(3)
+      margin-left: 0
+
+  .one-up + .two-up + .one-up
+    width: 100%
+
+  .two-up + .one-up
+    margin-left: 0
+    margin-right: 10px
+
+  .two-up + .one-up + .one-up
+    margin-left: 10px
+    margin-right: 0
+
+// one-column viewport
+@media all and (max-width: 440px)
+  .grid
+    width: 100%
+
+  .one-up, .two-up, .four-up
+    width: 100%
+    margin: 5px 0 !important
