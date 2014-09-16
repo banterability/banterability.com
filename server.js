@@ -32,7 +32,7 @@ serveFile = function(url, cb) {
 };
 
 http.createServer(function(req, res) {
-  console.log('[Incoming] ', req.url)
+  console.log('[Incoming] ', req.url);
   return serveFile(req.url, function(err, body, headers) {
     if (err) {
       console.log('[500] Error', {err: err});

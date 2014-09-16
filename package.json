@@ -5,6 +5,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-stylus": "~0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
     "grunt-copy-to": "0.0.4",
     "nib": "^1.0.3",
     "stylus": "^0.48.1"
