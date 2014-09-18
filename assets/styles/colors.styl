@@ -1,0 +1,26 @@
+$color-background = rgb(73, 81, 76)
+$color-foreground = rgb(243, 251, 234)
+$color-link = rgb(136, 204, 92)
+$color-link-hover = rgb(254, 211, 48)
+$color-link-active = lighten($color-link-hover, 35%)
+$color-link-visited = lighten($color-link, 35%)
+
+body
+  background-color: $color-background
+  color: $color-foreground
+
+a
+  color: $color-link
+  transition: color 300ms ease-out, text-shadow 300ms ease-out
+
+  &:visited
+    color: $color-link-visited
+
+  &:hover
+    color: $color-link-hover
+    text-shadow: $color-link-active 0 0 1px
+
+  &:active
+    color: $color-link-active
+    text-shadow: $color-link-hover 0 0 5px
+
