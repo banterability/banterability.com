@@ -8,9 +8,23 @@ strong, h1, h2, h3, h4, h5, h6
   font-weight: 600
 
 h1
-  font-size: 3em
+  font-size: 4em
+  line-height: 0.5em
+  transition: font-size 150ms linear
 
 p
   font-size: 1em
   line-height: 1.6em
   margin: 1.5em 0
+  transition: font-size 150ms linear
+
+q
+  font-style: italic
+
+// two-column viewport
+@media $two-column-media-query
+  h1
+    font-size: 3em
+
+  p
+    font-size: 1.2em
