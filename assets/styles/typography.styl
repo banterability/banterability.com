@@ -7,16 +7,20 @@ body
 strong, h1, h2, h3, h4, h5, h6
   font-weight: 600
 
-h1
-  font-size: 4em
-  line-height: 0.5em
+h1, h2, p
   transition: font-size 150ms linear
 
+h1
+  font-size: 5em
+  margin: 0
+
+h2
+  font-size: 1.5em
+
 p
-  font-size: 1em
+  font-size: 1.2em
   line-height: 1.6em
   margin: 1.5em 0
-  transition: font-size 150ms linear
 
 q
   font-style: italic
@@ -24,7 +28,10 @@ q
 // two-column viewport
 @media $two-column-media-query
   h1
-    font-size: 3em
+    font-size: 4em
+
+  h2
+    font-size: 1.5em
 
   p
-    font-size: 1.2em
+    font-size: 1.1em
