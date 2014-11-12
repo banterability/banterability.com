@@ -11,5 +11,8 @@ server = http.createServer (req, res) ->
     res.writeHead(404)
     res.end()
 
+server.on 'request', (req, res) ->
+  console.log "[#{res.statusCode}] #{req.url}"
+
 server.listen 5678, ->
   console.log 'up on 5678'
