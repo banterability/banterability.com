@@ -1,7 +1,11 @@
 ### Tasks
 
-| Command       | Description                                 |
-| ------------- | ------------------------------------------- |
-| `grunt`       | Compile CSS and copy everything to /publish |
-| `grunt watch` | Run `grunt` on any change to CSS or HTML    |
-| `npm start`   | Run the development server on port 5678     |
+**tl;dr** Run `npm install`, then `gulp live`.
+
+| Command                                    | Description                                    |
+| ------------------------------------------ | ---------------------------------------------- |
+| `gulp` or `gulp default` or `gulp publish` | Compile css and copy everything to /publish    |
+| `gulp favicon`                             | Copy `favicon.ico` to /publish                 |
+| `gulp html`                                | Copy `index.html` to /publish                  |
+| `gulp stylus`                              | Compile CSS and copy to /publish               |
+| `gulp live`                                | Start server & update all files as they change |
