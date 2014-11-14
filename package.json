@@ -6,6 +6,7 @@
     "start": "coffee server/index.coffee"
   },
   "devDependencies": {
+    "browser-sync": "^1.6.5",
     "coffee-script": "^1.8.0",
     "gulp": "^3.8.10",
     "gulp-stylus": "^1.3.4",
