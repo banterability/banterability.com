@@ -1,6 +1,20 @@
-### Tasks
+### Setup
 
-**tl;dr** Run `npm install`, then `gulp live`.
+1) Make sure you have gulp installed globally:
+
+```bash
+$ npm install -g gulp
+```
+
+2) Install dependencies:
+
+```bash
+$ npm install
+```
+
+### Usage
+
+**tl;dr** Run `gulp live`.
 
 | Command                                    | Description                                    |
 | ------------------------------------------ | ---------------------------------------------- |
