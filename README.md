@@ -14,12 +14,9 @@ $ npm install
 
 ### Usage
 
-**tl;dr** Run `gulp live`.
+**tl;dr** Run `gulp live` and get to work.
 
-| Command                                    | Description                                    |
-| ------------------------------------------ | ---------------------------------------------- |
-| `gulp` or `gulp default` or `gulp publish` | Compile css and copy everything to /publish    |
-| `gulp favicon`                             | Copy `favicon.ico` to /publish                 |
-| `gulp html`                                | Copy `index.html` to /publish                  |
-| `gulp stylus`                              | Compile CSS and copy to /publish               |
-| `gulp live`                                | Start server & update all files as they change |
+| Command      | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| `gulp`       | Compile css and copy everything to /publish             |
+| `gulp live`  | Start server on port 3000 & live-update as files change |
