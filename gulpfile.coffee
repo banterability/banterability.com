@@ -15,7 +15,9 @@ gulp.task 'html', ->
 
 gulp.task 'stylus', ->
   gulp.src 'assets/styles/index.styl'
-    .pipe stylus use: nib()
+    .pipe stylus
+      use: nib()
+      compress: true
     .pipe gulp.dest 'publish'
     .pipe reload stream: true
 
