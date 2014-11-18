@@ -2,9 +2,6 @@
   "name": "banterability.com",
   "private": true,
   "version": "1.0.0",
-  "scripts": {
-    "start": "coffee server/index.coffee"
-  },
   "devDependencies": {
     "browser-sync": "^1.6.5",
     "coffee-script": "^1.8.0",
