@@ -1,0 +1,53 @@
+@import 'variables'
+
+body
+  background-color: $color-background
+  color: $color-foreground
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B"
+  font-weight: 400
+
+strong, h1, h2, h3, h4, h5, h6
+  font-weight: 600
+
+h1
+  font-size: 5em
+  margin: 0
+
+h2
+  font-size: 1.5em
+
+p
+  font-size: 1.2em
+  line-height: 1.6em
+  margin: 1.5em 0
+
+a
+  border-bottom: 1px dotted $color-link
+  color: $color-link
+  text-decoration: none
+  transition: color 300ms ease-out, text-shadow 300ms ease-out
+
+  &:visited
+    color: $color-link-visited
+
+  &:hover
+    color: $color-link-hover
+    text-shadow: $color-link-active 0 0 1px
+
+  &:active
+    color: $color-link-active
+    text-shadow: $color-link-hover 0 0 5px
+
+q
+  font-style: italic
+
+// two-column viewport
+@media $two-column-media-query
+  h1
+    font-size: 4em
+
+  h2
+    font-size: 1.5em
+
+  p
+    font-size: 1.1em
