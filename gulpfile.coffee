@@ -22,7 +22,7 @@ gulp.task 'stylus', ->
     .pipe stylus
       use: nib()
       compress: false
-    .pipe autoprefixer browsers: ['last 2 versions']
+    .pipe autoprefixer browsers: ['last 4 versions']
     .pipe minifyCSS()
     .pipe gulp.dest 'tmp'
     .pipe reload stream: true
