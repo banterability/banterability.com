@@ -1,4 +1,5 @@
 gulp = require 'gulp'
+autoprefixer = require 'gulp-autoprefixer'
 browserSync = require 'browser-sync'
 fingerprint = require 'gulp-fingerprint'
 nib = require 'nib'
@@ -19,7 +20,8 @@ gulp.task 'stylus', ->
   gulp.src 'assets/styles/index.styl'
     .pipe stylus
       use: nib()
-      compress: true
+      compress: false
+    .pipe autoprefixer browsers: ['last 2 versions']
     .pipe gulp.dest 'tmp'
     .pipe reload stream: true
 
