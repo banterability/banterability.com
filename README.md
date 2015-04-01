@@ -18,5 +18,5 @@ $ npm install
 
 | Command      | Description                                             |
 | ------------ | ------------------------------------------------------- |
-| `gulp`       | Compile css and copy everything to /publish             |
-| `gulp live`  | Start server on port 3000 & live-update as files change |
+| `gulp live` | Start server on port 3000 & live-update as files change |
+| `gulp publish` | Compile everything, fingerprint assets, and copy to `/publish`. |
