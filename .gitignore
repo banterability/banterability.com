@@ -1,5 +1,4 @@
-assets/tmp/
-node_modules/
-fonts/
 .DS_Store
+node_modules/
 publish/
+tmp/
