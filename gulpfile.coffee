@@ -2,6 +2,7 @@ gulp = require 'gulp'
 autoprefixer = require 'gulp-autoprefixer'
 browserSync = require 'browser-sync'
 fingerprint = require 'gulp-fingerprint'
+minifyCSS = require 'gulp-minify-css'
 nib = require 'nib'
 rev = require 'gulp-rev'
 stylus = require 'gulp-stylus'
@@ -22,6 +23,7 @@ gulp.task 'stylus', ->
       use: nib()
       compress: false
     .pipe autoprefixer browsers: ['last 2 versions']
+    .pipe minifyCSS()
     .pipe gulp.dest 'tmp'
     .pipe reload stream: true
 
