@@ -429,8 +429,37 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "SSSocialCircle";
+  src: url("fonts/ss-social-circle.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SSSocialRegular";
+  src: url("fonts/ss-social-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-regular:before,
+.icon-circle:before {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+}
 body {
   font-family: Geomanist, Georgia, serif;
+}
+.icon-regular:before {
+  font-family: 'SSSocialRegular';
+}
+.icon-circle:before {
+  font-family: "SSSocialCircle";
 }
 html {
   box-sizing: border-box;
@@ -439,4 +468,13 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+.twitter:before {
+  content: 'twitter';
+}
+.linkedin:before {
+  content: 'linkedin';
+}
+.github:before {
+  content: 'github';
 }
