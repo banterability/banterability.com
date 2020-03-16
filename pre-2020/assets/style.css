@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Arquette';
+  src: url("fonts/ATCArquette-Light.eot?#iefix") format('embedded-opentype'),
+       url("fonts/ATCArquette-Light.woff2") format('woff2'),
+       url("fonts/ATCArquette-Light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arquette';
+  src: url("fonts/ATCArquette-Semibold.eot?#iefix") format('embedded-opentype'),
+       url("fonts/ATCArquette-Semibold.woff2") format('woff2'),
+       url("fonts/ATCArquette-Semibold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
+  color: rgb(41, 41, 41);
+  font-family: 'Arquette';
+  font-size: 28px;
+  margin: 0;
+  font-weight: 300;
+}
+
+h1, strong, a {
+  font-weight: 600;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 20px 50px;
+  max-width: 600px;
+}
+
+header {
+  color: rgb(236, 236, 236);
+  background-color: rgb(41, 41, 41);
+  border-bottom: 15px solid rgb(151, 194, 225);
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+.accent {
+  color: rgb(255, 85, 85);
+}
+
+a {
+  color: rgb(206, 0, 0);
+  transition: border-bottom-color 200ms linear,
+              color 150ms linear,
+              text-shadow 200ms linear;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+
+a:hover {
+  color: rgb(151, 194, 225);
+  text-decoration: none;
+  text-shadow: rgb(255, 255, 255) 2px 2px 8px,
+               rgba(0,0,0,.05) 1px -1px 0px;
+  border-bottom-color: transparent;
+}
+
+a:active {
+  border-bottom-color: rgb(206, 0, 0);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5em;
+  margin-top: 20px;
+}
+
+.flag {
+  border-top: solid 5px rgb(151, 194, 225);
+  border-bottom: solid 5px rgb(151, 194, 225);
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer span {
+  color: rgb(52, 52, 52);
+}
+
+.flag img {
+  margin: 0 5px;
+  font-size: 1.5em;
+  vertical-align: 1px;
+}
+
+
+ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 24px;
+  display: block;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.email {
+  background-color: rgba(0,0,0,0.05);
+  font-size: 1.2rem;
+  padding: 5px;
+}

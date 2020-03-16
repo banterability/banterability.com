@@ -1,0 +1,72 @@
+section h2 {
+  margin-left: 20px;
+}
+article {
+  padding: 0 10px 10px 0;
+  margin-bottom: 25px;
+  max-width: 550px;
+}
+article p {
+  margin: 0;
+}
+article header {
+  background-color: #262532;
+  padding: 15px 10px 15px 15px;
+  border-left: 5px solid rgba(59,193,191,0.5);
+}
+article header > p {
+  display: flex;
+  justify-content: space-between;
+}
+article header span {
+  align-self: baseline;
+  display: inline-block;
+}
+article header p:first-child {
+  margin-bottom: 5px;
+}
+article .company {
+  font-size: 1.5em;
+  color: #fdc300;
+}
+article .title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #f16286;
+}
+article .location,
+article .dates {
+  text-align: right;
+  margin-left: 25px;
+  font-style: italic;
+}
+article .location {
+  font-size: 0.9em;
+}
+article .dates {
+  font-size: 0.75em;
+}
+article .inline-list {
+  font-size: 0.8em;
+}
+article .inline-list h3 {
+  color: rgba(214,214,218,0.8);
+  margin: 7px 0;
+  font-size: 1em;
+}
+article .inline-list li {
+  font-weight: bold;
+  background-color: #262532;
+}
+.languages li {
+  color: #fdc300;
+}
+.architectures li {
+  color: #3bc1bf;
+}
+.description {
+  padding: 10px 20px 0 20px;
+}
+.description p {
+  margin-bottom: 10px;
+}

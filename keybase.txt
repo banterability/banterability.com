@@ -1,0 +1,133 @@
+==================================================================
+https://keybase.io/banterability
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://banterability.com
+  * I am banterability (https://keybase.io/banterability) on keybase.
+  * I have a public key with fingerprint E5D9 0808 D4C9 EAD6 6749  DADD 1E96 B62F D7C6 52F4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e5d90808d4c9ead66749dadd1e96b62fd7c652f4",
+            "host": "keybase.io",
+            "key_id": "1e96b62fd7c652f4",
+            "kid": "01015009e6b5055407305497bad363708ce489fdc13e9dd51f2e8b078eda828883e00a",
+            "uid": "c9a2ac79d36b4c916a44b8fc5a6e2c00",
+            "username": "banterability"
+        },
+        "service": {
+            "hostname": "banterability.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1426778064,
+    "expire_in": 157680000,
+    "prev": "778a8a0b82c5eb80798b85af6f38f4713f068b021df2d34a9c79cfbbaa249499",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMIcAnicbZJrSBVBFMev1yyzAnvQ80O12DVSbHZ3dnf2+qHojUEkEREUt5mdWd3U
+3W3vaplUEr2LtBcR0YtUkESwIgghLBQCtcIo86IQ5YMKtIwIes9KfWu+DHPO//zm
+nD+ndUpyKC3pZ3j+z7Lt+rWk9ofrS0Ob04aeVQjEoeVCtEIoYmOXadkFzHM9y/aF
+qMAUqgMEEIWGzjBVVQ3qFFMqMl0lqmRSzVAVyYRCtlDoxIMKjiE4znIsh8f4I2ZR
+Hv2PvmgsAUQgKgDoTCUKUBQINBkoUNcIprIqawAZDCLdpIYoM51SRTQlhgjQEKMY
+SQghmQGAOa50DGfoWMKGpvNiwlsWVQwhQaahYJVJBgCBMM48G5cwribY9pmHiVVs
++eXCvmyBp8osgwU+BOP8T5ZjOCWc4nqO7xhOMU8X+r4bjwblfrkb6HczEvtLihHL
+ptxRXlHGvLjl2EJU5ErDtwK0CCVV0xBQYbbA9riWx2JWoFA0FQF+gn9YGUdyEUYY
+ECQZCiMIaDoiSMGmasrIhJoom0DltkgiNSUqQ6xzDwyTEIwlqENdF4LZdtmOEFV4
+m7iAI+NWgY39Uo8J+x61bBsXSkoLjU8JBzsRSpuY/m9TPtSkhupWXR9JVM678+Nr
+Y2b75PDNM4c65yw6/vjYno/N7nYHGr+1vC9P2oqfw1mXzxb+GD59uiHfLBn2htZs
+ulYNR2a/7B3tfpcczpp/tbE1suHB2/KqE7LVE8ltP3qro7/wyLfmgR1vaKO7uq5v
+sPFkU34iyiLL0t+HK19czrw0+dO5qpTXfRdzrfr6xIzDv6Z9z6hYsXjnwY7aC6cm
+Pq1qaOscyHX6lYqEeszeeiWrf+be+3M+GU2j+7fEMt5GprsHekZfpddWZ1Y6fROS
+lyxd2HuD3pYbuprnioNN7d1W9d1JkSmfG6o2Tpp7r2ttzdREy4Ib7qIl9UMTOofz
+SpevwysP3E09/wdLLzLu
+=6Xi+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/banterability
+
+==================================================================
+
+==================================================================
+https://keybase.io/banterability
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://banterability.com
+  * I am banterability (https://keybase.io/banterability) on keybase.
+  * I have a public key with fingerprint E5D9 0808 D4C9 EAD6 6749  DADD 1E96 B62F D7C6 52F4
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e5d90808d4c9ead66749dadd1e96b62fd7c652f4",
+            "host": "keybase.io",
+            "key_id": "1e96b62fd7c652f4",
+            "uid": "c9a2ac79d36b4c916a44b8fc5a6e2c00",
+            "username": "banterability"
+        },
+        "service": {
+            "hostname": "banterability.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1405553008,
+    "expire_in": 157680000,
+    "prev": "170191b377df548bb7de2f3a8238e7f29b4d53c8035f600992069a93065a28a0",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.23
+Comment: https://keybase.io/crypto
+
+yMHwAnicbZFfSBxXFMZnTTZxlwgxJtBUiDqYKMZs786/PwtG8GFD2gqRjaBGWe/M
+vbNOozPr7LjWulIbKFixqXnIvkUNkSZCLKVLiFlCYqRJSsyChGBoolFwHwLFQrHx
+RRe8I+2b92W45/ud77tnzu8F+yivK5dXkou3yeOu+dmtHir03BPtpxUT9dGBfvoy
+3v1ouhHBVtTSDZsO0JhHMpCAhDhVxhAJgsjJCCLkx7KgCIyGRFXgGY2jq+kOM+Z0
+EBsFxrBPN0mNXMI6ItU9+J5dQZUhA1VRRqygkAy/ADlOkTSVhwJmVAAcMIYtA3Zh
+QivQsLEFFb1Tt/vogWqaSHFdJVL/bv5emE81u4hL1DJtUzU7idxh29GA0233RR28
+Fyvh/4zCim4g8gdIQxxbMd006ICfkKqtO85+DvA8zwIgVdP466hu4bDuELwoSIAc
+JwbHnXlF4Jf9CiuKSOM5SVFEhBmNhRLDSljUGFnhEM+qEmB5TQBAlhkgyFBmgcBD
+RoLO2DHcbZh0gCHPhBFiGdMjBrR7LEwPzM227qdcXuqAO8/ZIeX1HP5/sw9H86nV
+umjxp+eWnjWeT/6c+LIs2PAyOVZ78W5m5Ebo0JEVb0XN0w+iuy64DbJtHxc/WZnu
+vLUZOp5aWAkNbi6UbT+uSsP6rebEvxtziYqDIfZOa1PpmVwmUpgG308tx9J/r/84
+XjnU+/rB4Gbwj5Ojb/85FfQUF3xzon1sKlHStXT73m/KGts8cbOK9Z+e7G5x166V
+rqso65n84cKVv5JNdHn2vo7mteGZogZje/WY9FVhSYZ6lcsIafef7dNDc48mXL4X
+FWevvs+OpJYuVaWSmnJt+QthsrXunVH5Znh0MfXrT+XBjemZoprPJ45S3z0Zqr8+
+/hlo8dXnf1vKVDb+EtwBrFcUAA==
+=U+BM
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/banterability
+
+==================================================================

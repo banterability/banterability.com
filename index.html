@@ -2,48 +2,118 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Banterability</title>
+    <title>Banterability is Jeff Long</title>
     <meta name="author" content="Jeff Long">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Banterability">
+    <meta property="og:title" content="Banterability">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://banterability.com/">
+  	<meta property="og:description" content="Banterability is Jeff Long.">
+
+    <style media="screen">
+    body {
+      margin: 0;
+      transition: background-color 500ms linear;
+    }
+    body.theme--light {
+      background-color: #ddd;
+    }
+    body.theme--dark {
+      background-color: #222;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 500ms linear;
+    }
+    .theme--light header {
+      background-color: blue;
+    }
+    .theme--dark header {
+      background-color: darkblue;
+    }
+
+    p, span {
+      transition: color 500ms linear;
+    }
+    .theme--light p, .theme--light span {
+      color: #444;
+    }
+    .theme--dark p, .theme--dark span {
+      color: #bbb;
+    }
+
+    a {transition: color 500ms linear; }
+
+    .theme--light a {
+      color: rgb(252, 13, 27);
+    }
+    .theme--dark a {
+      color: rgb(181, 221, 241);
+    }
+
+    .chicago-star {
+      color: rgb(252, 13, 27)
+    }
+
+    nav li {list-style: none; display: inline-block;}
+    nav { text-align: left; }
+
+    header .theme { text-align: right; }
+    </style>
+
   </head>
-  <body class="grid">
-    <section class="row">
-      <div class="four-up column">
-        <h1>Hi.</h1>
+  <body class="theme--light">
+    <header>
+      <span class="tag">Banterability</span>
 
-        <p>My name is Jeff and I make things out of the Internet.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Elsewhere</a></li>
+        </ul>
+      </nav>
 
-        <p>I work at <a href="http://www.groupon.com/">Groupon</a> in <a href="http://instagram.com/p/nRDgL_KjnR/">Chicago</a>, where I focus on personalization and client-side performance. AllThingsD called some of my work <q>neither quirky-funny nor quirky-smart; just kind of boring.</q></p>
+      <span class="theme">
+        <a href="javascript:void(0);" id="theme-toggle">toggle</a>
+      </span>
+    </header>
 
-        <p>At various other times, I've been a photojournalist, “webmaster,” late-night DJ, <a href="http://www.imdb.com/title/tt0701196/quotes?item=qt0348830">imitation Krusty</a>, cashier, and general roustabout.</p>
+    <section class="wrapper">
+      <p>Jeff Long <a href="https://twitter.com/wirehead2501/status/933225268990197760">tries to make sand think</a> in Chicago, Illinois.</p>
 
-        <p>Visit me elsewhere, or just say hi:</p>
-      </div>
-    </section>
-    <section class="row">
-      <div class="one-up column">
-        <a href="https://github.com/banterability">GitHub</a>
-      </div>
-      <div class="one-up column">
-        <a href="https://twitter.com/banterability">Twitter</a>
-      </div>
-      <div class="one-up column">
-        <a href="https://www.linkedin.com/in/jeffreylong">LinkedIn</a>
-      </div>
-      <div class="one-up column">
-        <a href="mailto:hello@banterability.com">Email</a>
-      </div>
-    </section>
-    <script>
-      (function(ba,nt,er,ab,il,it,y){ba['GoogleAnalyticsObject']=il;ba[il]=ba[il]||function(){
-      (ba[il].q=ba[il].q||[]).push(arguments)},ba[il].l=1*new Date();it=nt.createElement(er),
-      y=nt.getElementsByTagName(er)[0];it.async=1;it.src=ab;y.parentNode.insertBefore(it,y)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      <p>Currently making tools at <a href="https://www.braintreepayments.com/">Braintree</a> to help merchants run their businesses.</p>
 
-      ga('create', 'UA-54708550-3', 'auto');
-      ga('send', 'pageview');
+      <p>Previously, I helped build <a href="https://carbonmade.com/">Carbonmade</a>, <a href="https://www.groupon.com">Groupon</a>, <a href="https://www.scpr.org/">Southern California Public Radio</a>, and <a href="https://www.marketplace.org/">Marketplace</a>.</p>
+
+      <p>I push miscellaneous bits and pieces of what I’m working on to <a href="https://github.com/banterability">GitHub</a> and <a href="https://www.npmjs.com/~banterability">npm</a>.</p>
+
+      <p>You can see what else I’m up to, in decreasing order of frequency, on <a href="https://www.instagram.com/banterability/">Instagram</a>, <a href="https://twitter.com/banterability">Twitter</a>, and <a href="https://www.linkedin.com/in/jeffreylong">LinkedIn</a>.</p>
+
+      <p>Say hi: <code class="email">hello @ &lt;this domain&gt;</code>.</p>
+  	</section>
+
+    <footer class="wrapper">
+      <p>Made with love & keyboards in Chicago <span class="chicago-star">✶✶✶✶</span></p>
+    </footer>
+
+    <script type="text/javascript">
+      document.querySelector('#theme-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('theme--light');
+        document.body.classList.toggle('theme--dark');
+      }, false);
+
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        console.log('default dark');
+        document.body.classList.toggle("theme--light");
+        document.body.classList.toggle("theme--dark");
+      }
     </script>
   </body>
 </html>

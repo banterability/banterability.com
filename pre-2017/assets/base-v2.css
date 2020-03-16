@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+body {
+  background-color: #313041;
+  color: #d6d6da;
+}
+a, a:visited {
+  border-bottom: 1px dotted #3bc1bf;
+  color: #3bc1bf;
+  padding-bottom: 1px;
+  text-decoration: none;
+  transition: color ease-out 250ms, border-bottom-color ease-out 250ms;
+}
+a:hover {
+  border-bottom-color: transparent;
+  color: #cef0ef;
+}
+.inline-list h3 {
+  display: inline-block;
+  font-variant: small-caps;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.inline-list ul {
+  display: inline-block;
+  margin: 0;
+  padding-left: 0;
+}
+.inline-list li {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 5px;
+}
