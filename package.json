@@ -1,0 +1,18 @@
+{
+  "name": "bntr2k21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "@11ty/eleventy --serve",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "luxon": "^2.0.2",
+    "prettier": "^2.3.2"
+  }
+}

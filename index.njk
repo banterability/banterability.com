@@ -1,0 +1,24 @@
+---
+layout: layout.mustache
+title: Home
+---
+<h1>Jeff Long tries to make sand think* in Chicago, Illinois.</h1>
+
+<p>Currently making tools at Braintree to help merchants run their businesses.</p>
+
+<p>Previously, I helped build Carbonmade, Groupon, Southern California Public Radio, and Marketplace.</p>
+
+<p>I push miscellaneous bits and pieces of what I’m working on to GitHub and npm.</p>
+
+<p>You can see what else I’m up to, in decreasing order of frequency, on Instagram, Twitter, and LinkedIn.</p>
+
+<p>Say hi: `hello @ <this domain>`.</p>
+
+{% set maxPosts = collections.posts.length | min(3) %}
+<h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
+
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "post-list.njk" %}
+
+<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>

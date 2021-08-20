@@ -1,0 +1,9 @@
+@font-face  {
+	font-family: "ShipsWhistle";
+	src: url("/fonts/ShipsWhistle-Regular.woff2") format("woff2");
+}
+@font-face  {
+	font-family: "ShipsWhistle-Bold";
+	src: url("/fonts/ShipsWhistle-Bold.woff2") format("woff2");	
+	letter-spacing: 1.1rem;
+}
