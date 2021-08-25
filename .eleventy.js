@@ -1,6 +1,9 @@
 const {DateTime} = require('luxon');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 module.exports = function(eleventyConfig) {	
-	eleventyConfig.setDataDeepMerge(true);
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	// eleventyConfig.setDataDeepMerge(true);
 	
 	eleventyConfig.addFilter("readableDate", dateObj => {
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
