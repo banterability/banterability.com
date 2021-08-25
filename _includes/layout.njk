@@ -1,0 +1,29 @@
+---
+title: Banterability
+---
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	  <title>{{ title }}</title>
+	  <meta name="description" content="Banterability is Jeff Long.">
+	  <meta name="author" content="Jeff Long">
+	  <meta name="viewport" content="width=device-width">
+	  
+	  <meta property="og:locale" content="en_US">
+	  <meta property="og:site_name" content="Banterability">
+	  <meta property="og:title" content="Banterability">
+	  <meta property="og:type" content="website">
+	  <meta property="og:url" content="https://banterability.com/">
+	  <meta property="og:description" content="Banterability is Jeff Long.">
+	  
+	  <link rel="stylesheet" href="/styles/fonts.css" />
+  </head>
+  <body>
+  	<header>
+	  <a href="/">Home</a>
+	  {% include "nav.njk" %}
+	 </header>
+	{{ content | safe }}
+  </body>
+</html>

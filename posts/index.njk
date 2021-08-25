@@ -1,0 +1,10 @@
+---
+eleventyNavigation:
+	key: Posts
+	parent: Home
+---
+<ul>
+{%- for post in collections.posts -%}
+  <li><a href="{{ post.url }}">{{ post.url }}</a></li>
+{%- endfor -%}
+</ul>

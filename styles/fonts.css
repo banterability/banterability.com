@@ -7,3 +7,7 @@
 	src: url("/fonts/ShipsWhistle-Bold.woff2") format("woff2");	
 	letter-spacing: 1.1rem;
 }
+body {
+	  font-family: "ShipsWhistle-Bold";
+	  font-size: 2rem;
+	}
