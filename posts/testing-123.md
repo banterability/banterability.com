@@ -1,6 +1,6 @@
 ---
 title: Testing 1, 2, 3
-date: 2021-08-25
+date: Created
 eleventyNavigation:
 	key: Testing 1, 2, 3
 	parent: Posts
