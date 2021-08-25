@@ -4,7 +4,7 @@ layout: layout.njk
 <h3>An post called...</h3>
 
 <h1>{{title}}</h1>
-<p>published on {{date}}</p>
+<p>published on {{ date | readableDate }}</p>
 
 {{ content | safe }}
 
