@@ -1,8 +1,5 @@
 ---
-layout: layout.njk
-title: Home
-eleventyNavigation:
-	key: Home
+layout: base
 ---
 <h1>Jeff Long tries to make sand think* in Chicago, Illinois.</h1>
 
@@ -16,11 +13,22 @@ eleventyNavigation:
 
 <p>Say hi: <code>hello@[this domain]</code>.</p>
 
-{% set maxPosts = collections.posts.length | min(3) %}
-<h2>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
-
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "post-list.njk" %}
+<h2>Latest post:</h2>
+{% for post in collections.post | reverse | limit(1) %}
+  <div class="date">{{ post.date | readableDate }}</div>
+    <a href="{{ post.url }}">
+      <div class="post-summary">
+        <div class="title">
+          {{ post.data.title }}
+        </div>
+        </a>
+        <div class="subtitle">
+        {{ post.data.description }}
+        </div>
+        <div class="minutes">{{ post.templateContent | readingTime }} minute read</div>
+      </div>
+  {% endfor %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+{{ page | log}}

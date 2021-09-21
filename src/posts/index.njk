@@ -1,0 +1,23 @@
+---
+layout: base
+title: All Posts
+eleventyExcludeFromCollections: true
+---
+<h1>Blog</h1>
+
+<div class="posts">
+  {% for post in collections.post | reverse %}
+  <div class="date">{{ post.date | readableDate }}</div>
+    <a href="{{ post.url }}">
+      <div class="post-summary">
+        <div class="title">
+          {{ post.data.title }}
+        </div>
+        </a>
+        <div class="subtitle">
+        {{ post.data.description }}
+        </div>
+        <div class="minutes">{{ post.templateContent | readingTime }} minute read</div>
+      </div>
+  {% endfor %}
+</div>

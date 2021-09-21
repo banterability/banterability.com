@@ -1,18 +1,29 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { DateTime } = require("luxon");
 const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
-
-const { head, min } = require("./_filters/collections");
-const { htmlDateString, readableDate } = require("./_filters/dateTime");
+const generateHeadingIds = require("@orchidjs/eleventy-plugin-ids");
+const readingTime = require("reading-time");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addFilter("head", head);
-  eleventyConfig.addFilter("htmlDateString", htmlDateString);
-  eleventyConfig.addFilter("min", min);
-  eleventyConfig.addFilter("readableDate", readableDate);
-
-  eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("styles");
-
   eleventyConfig.addPlugin(eleventyFeedPlugin);
-  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(generateHeadingIds);
+
+  eleventyConfig.addFilter("limit", (array, n) => {
+    // if(!Array.isArray(array) || array.length === 0) {
+    //   return [];
+    // }
+    return array.slice(0, n);
+  });
+  eleventyConfig.addFilter("readableDate", (dateObj) =>
+    DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy")
+  );
+  eleventyConfig.addFilter("readingTime", (templateContent) =>
+    Math.ceil(readingTime(templateContent).minutes)
+  );
+
+  eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/styles");
+
+  return {
+    dir: { input: "src" },
+  };
 };

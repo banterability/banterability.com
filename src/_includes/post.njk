@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+<h3>A post called...</h3>
+
+<h1>{{title}}</h1>
+<p>published on {{ page.date | readableDate }}</p>
+
+{{ content | safe }}
+
+<hr />
+
+{% set previousPost = collections.post | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.post | getNextCollectionItem(page) %}
+{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
