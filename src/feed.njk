@@ -2,18 +2,19 @@
 eleventyExcludeFromCollections: true
 permalink: posts/feed.xml
 ---
+{% set posts = collections.post | published %}
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Banterability: Posts</title>
   <subtitle>Recent posts from banterability.com</subtitle>
   <link href="https://banterability.com/posts/feed.xml" rel="self"/>
   <link href="https://banterability.com/"/>
-  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>https://banterability.com/</id>
   <author>
 	<name>Jeff Long</name>
   </author>
-  {%- for post in collections.posts %}
+  {%- for post in posts %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
 	<title>{{ post.data.title }}</title>

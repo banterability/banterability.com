@@ -14,7 +14,7 @@ layout: base
 <p>Say hi: <code>hello@[this domain]</code>.</p>
 
 <h2>Latest post:</h2>
-{% for post in collections.post | reverse | limit(1) %}
+{% for post in collections.post | published | reverse | limit(1) %}
   <div class="date">{{ post.date | readableDate }}</div>
     <a href="{{ post.url }}">
       <div class="post-summary">

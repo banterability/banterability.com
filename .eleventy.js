@@ -7,6 +7,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyFeedPlugin);
   eleventyConfig.addPlugin(generateHeadingIds);
 
+  eleventyConfig.addFilter("published", (posts) => {
+    console.log("inside published", posts);
+    return posts.filter((post) => !post.data.draft);
+  });
+  
   eleventyConfig.addFilter("limit", (array, n) => {
     // if(!Array.isArray(array) || array.length === 0) {
     //   return [];

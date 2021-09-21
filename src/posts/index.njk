@@ -6,7 +6,7 @@ eleventyExcludeFromCollections: true
 <h1>Blog</h1>
 
 <div class="posts">
-  {% for post in collections.post | reverse %}
+  {% for post in collections.post | published | reverse %}
   <div class="date">{{ post.date | readableDate }}</div>
     <a href="{{ post.url }}">
       <div class="post-summary">
