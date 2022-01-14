@@ -4,8 +4,6 @@ description: On sucking your way to success
 date: 2021-08-26
 ---
 
-# Mind the Gap
-
 I've had a presence on the internet in some form or another for over 20 years
 
 back in the good old days, where I, a pre-teen, bought a domain by just telling someone I was good for the cash

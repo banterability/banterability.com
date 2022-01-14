@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	  <meta charset="utf-8">
-	  <title>{% if title %}{{title}} &raquo; {% endif %}Banterability</title>
-	  <meta name="description" content="Banterability is Jeff Long.">
-	  <meta name="author" content="Jeff Long">
-	  <meta name="viewport" content="width=device-width">
-	  
-	  <meta property="og:locale" content="en_US">
-	  <meta property="og:site_name" content="Banterability">
-	  <meta property="og:title" content="Banterability">
-	  <meta property="og:type" content="website">
-	  <meta property="og:url" content="https://banterability.com/">
-	  <meta property="og:description" content="Banterability is Jeff Long.">
-	  
-	  <link rel="stylesheet" href="/styles/fonts.css" />
-  </head>
-  <body>
-	  <header>
-	  <h1>Banterability</h1>
-	  <nav>
-	  <ul>
-	  
-	  <p>Current: {{ page.url }}</p>
-	  <li><a href="/">About {% if page.url == "/" %}*{% endif %}</a></li>
-	  <li><a href="/posts">Posts {% if page.url == "/posts/" %}*{% endif %}</a></li>
-	  </ul>
-	  </nav>
-	 </header>
-	 
-	{{ content | safe }}
-	<footer>
-		<span>Made with ❤️ and ⌨️ in Chicago</span>
-		<span>Last generated {{generatedAt | readableDate}}
-	</footer>
-  </body>
-</html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			{% if title %}{{title}} &raquo; {% endif %}Jeff Long</title>
+		<meta name="description" content="Banterability is Jeff Long.">
+		<meta name="author" content="Jeff Long">
+		<meta name="viewport" content="width=device-width">
+
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="Banterability">
+		<meta property="og:title" content="Banterability">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://banterability.com/">
+		<meta property="og:description" content="Banterability is Jeff Long.">
+
+		<link rel="stylesheet" href="/styles/global.css"/>
+		<link rel="stylesheet" href="/styles/fonts.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>Jeff Long</h1>
+			<nav>
+				<ul>
+					<li>
+						<a {% if page.url == "/" %}class="active" {% endif %} href="/">About</a>
+					</li>
+					<li>
+						<a {% if page.url == "/posts/" %}class="active" {% endif %} href="/posts">Writing</a>
+					</li>
+					<li>
+						<a {% if page.url == "/now/" %}class="active" {% endif %} href="/now">Now</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			{{ content | safe }}
+		</main>
+		<footer>
+			<span>Made with ❤️ and ⌨️ in Chicago</span>
+			<span>Last generated {{generatedAt | readableDate}}
+			</footer>
+		</body>
+	</html>
