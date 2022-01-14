@@ -6,6 +6,8 @@ layout: base
 
 ## Now
 
+Publishing a personal website for the first time in a decade (👋 hi).
+
 ### Learning
 
 * [Rust](https://www.rust-lang.org)
