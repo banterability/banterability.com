@@ -5,6 +5,9 @@ layout: base
 ---
 
 ## Now
+([whats a now page?](https://nownownow.com/about))
+
+_Last updated {{page.date | readableDate }}_
 
 Publishing a personal website for the first time in a decade (👋 hi).
 
