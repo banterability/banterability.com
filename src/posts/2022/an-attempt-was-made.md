@@ -4,13 +4,33 @@ description: On trying this whole thing again
 date: 2022-01-25
 ---
 
+We're celebrating a birthday. In September, the first domain name I ever registered will be old enough to order a whiskey sour.
+
+I've had a presence on the internet in some form or another for even longer, fiddling with 
+
+
+I registered this domain in November 2005
+
+a folder on a shared host
+a number of Wordpress instances, both hosted and otherwise
+redirected to Tumblr / Medium
+no fewer than five homegrown blog engines
+
+But for the last 
+
+
+
+back in the good old days, when I, a pre-teen, registered a .com domain by just telling someone over the phone that I was good for the cash.
+
+
 I’ve had a presence on the internet in some form or another for at least 20 years
+
+2001-09-18T16:11:35Z
 
 ```
 % whois banterability.com
 >   Creation Date: 2005-11-19T08:03:19Z
 ```
-
 
 (16 Years, 67 Days)
 
@@ -31,10 +51,3 @@ virtual servers
 
 
 
--back in the good old days, where I, a pre-teen, bought a domain by just telling someone I was good for the cash
--
--I’ve never been quiet for
--
--Nothing is worse than the post about how you are going to start posting, so let’s try a different tack:
--
--/dealing with being bad before you get good/

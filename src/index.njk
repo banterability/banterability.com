@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<h2>I try to make sand think* in Chicago, Illinois.</h2>
+<h2>A generally-nice* person in Chicago, Illinois.</h2>
 
 <p>Currently making tools at <a href="https://www.paypal.com/">PayPal</a> to help merchants run their businesses.</p>
 
@@ -11,7 +11,10 @@ layout: base
 
 <p>You can see what else I’m up to, in decreasing order of frequency, on <a href="https://www.instagram.com/banterability/">Instagram</a>, <a href="https://twitter.com/banterability">Twitter</a>, and <a href="https://www.linkedin.com/in/jeffreylong/">LinkedIn</a>.</p>
 
+<small>*hopefully</small>
+
 <p>Say hi: <code>hello@[this domain]</code>.</p>
+
 
 <h2>Latest post:</h2>
 {% for post in collections.post | published | reverse | limit(1) %}
@@ -30,5 +33,3 @@ layout: base
   {% endfor %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-
-{{ page | log}}
