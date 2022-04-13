@@ -1,16 +1,18 @@
 const { DateTime } = require("luxon");
 const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
-const generateHeadingIds = require("@orchidjs/eleventy-plugin-ids");
 const readingTime = require("reading-time");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyFeedPlugin);
-  eleventyConfig.addPlugin(generateHeadingIds);
 
-  eleventyConfig.addFilter("published", (posts) => {
-    console.log("inside published", posts);
-    return posts.filter((post) => !post.data.draft);
-  });
+  let markdownIt = require("markdown-it");
+  let markdownItAnchor = require("markdown-it-anchor");
+  let options = {
+    html: true,
+  };
+  let markdownLib = markdownIt(options).use(markdownItAnchor);
+
+  eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.addFilter("limit", (array, n) => {
     if (!Array.isArray(array) || array.length === 0) {
