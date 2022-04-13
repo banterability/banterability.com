@@ -1,0 +1,25 @@
+---
+layout: base
+title: Writing
+eleventyExcludeFromCollections: true
+---
+
+<h1>Writing</h1>
+
+<div class="posts">
+  {% for post in collections.post | reverse %}
+  <div class="post">
+    <abbr class="date" title="{{post.date}}">{{ post.date | readableDate }}</abbr>
+    <a href="{{ post.url }}">
+      <h3 class="title">{{ post.data.title }}</h3>
+    </a>
+    <div class="post-meta">
+      <div class="subtitle">
+      {{ post.data.description }}
+      </div>
+      <div class="reading-time">{{ post.templateContent | readingTime }} minute read</div>
+    </div>
+        
+      </div>
+  {% endfor %}
+</div>

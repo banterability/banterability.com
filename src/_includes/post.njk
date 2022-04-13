@@ -1,15 +1,40 @@
 ---
-layout: base.njk
+layout: base
 ---
 
-<h2>{{title}}</h2>
-<p>published on {{ page.date | readableDate }}</p>
+<article class="post">
+  <h2>{{title}}</h2>
+  <abbr class="publishedAt" title="{{page.date}}">{{ page.date | readableDate }} | {{page.date | relativeDate }}</abbr>
 
-{{ content | safe }}
+  {{ content | fixTypography | safe }}
+</article>
 
 <hr />
 
+<div class="post-navigation">
 {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.post | getNextCollectionItem(page) %}
-{% if previousPost %}Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
-{% if nextPost %}Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+
+<div>
+  Previous:
+{% if previousPost %}
+   <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+{% else %}
+  <em>none</em>
+{% endif %}
+</div>
+
+<a href="/writing">All Posts</a>
+
+<div>
+  Next: 
+  {% if nextPost %}
+    <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+  {% else %}
+    <em>none</em>
+  {% endif %}
+</div>
+
+</div>
+
+<hr />

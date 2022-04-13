@@ -12,28 +12,33 @@
 		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7084114/6199432/css/fonts.css"/>
 	</head>
 	<body>
-		<header>
-			<h1>Jeff Long</h1>
-			<nav>
-				<ul>
-					<li>
-						<a {% if page.url == "/" %}class="active" {% endif %} href="/">About</a>
-					</li>
-					<li>
-						<a {% if page.url == "/posts/" %}class="active" {% endif %} href="/posts">Writing</a>
-					</li>
-					<li>
-						<a {% if page.url == "/now/" %}class="active" {% endif %} href="/now">Now</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			{{ content | safe }}
-		</main>
+		<div class="main-content">
+
+			<!-- generated: {{ generatedAt }} -->
+			<header>
+				<a href="/">
+					<h1>Banterability</h1>
+				</a>
+				<nav>
+					<ul>
+						<li>
+							<a {% if page.url == "/writing" %}class="active" {% endif %} href="/writing">Writing</a>
+						</li>
+						<li>
+							<a {% if page.url == "/projects" %}class="active" {% endif %} href="/projects">Projects</a>
+						</li>
+						<li>
+							<a {% if page.url == "/about" %}class="active" {% endif %} href="/about">About</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				{{ content | safe }}
+			</main>
+		</div>
 		<footer>
-			<span>Made with ❤️ and ⌨️ in Chicago</span>
-			<span>Last generated {{generatedAt | readableDate}}
-			</footer>
-		</body>
-	</html>
+			<p>Made with love &amp; keyboards in Chicago <span class="chicago-star">✶✶✶✶</span></p>
+		</footer>
+	</body>
+</html>

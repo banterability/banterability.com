@@ -1,21 +1,41 @@
-body{
+body {
   margin: 0;
 }
-header {
-  background-color: blueviolet;
-  color: #eee;
+.main-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.25em 0.75em;
 }
+header,
+footer {
+  background-color: rgb(65, 67, 89);
+  color: #eee;
+  font-family: "Archer SSm A", "Archer SSm B";
+  font-style: normal;
+  font-weight: 800;
+}
+a {
+  color: #005899;
+}
+
+.chicago-star {
+  color: #e4002b;
+}
+
+main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Archer SSm A", "Archer SSm B";
+  font-style: normal;
+  font-weight: 800; */
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-style: normal;
+  font-weight: 700;
+}
+
 header a {
   color: #eee;
-}
-nav li {
-  display: inline-flex;
-  list-style: none;
-  margin: 0.3em;
 }
 .active {
   text-decoration: none;
@@ -23,4 +43,59 @@ nav li {
 }
 main {
   margin: 1em;
+  font-family: "Archer SSm A", "Archer SSm B";
+  font-style: normal;
+  font-weight: 600;
+  /* font-family: "Gotham SSm A",
+                      "Gotham SSm B";
+                      font-style: normal;
+                      font-weight: 400; */
+}
+
+code,
+pre {
+  font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*
+                                                                                .post {
+                                                                                  display: flex;
+                                                                                  align-items: flex-start;
+                                                                                  /* align-items: center;
+                                                                                  justify-content: space-between; 
+                                                                                }
+                                                                                
+                                                                                .post .date, .post .title, .post .post-meta {
+                                                                                  border: 1px solid #999;
+                                                                                  margin: 0;
+                                                                                  
+                                                                                }
+                                                                                
+                                                                                .post .date {
+                                                                                  text-align: right;
+                                                                                  width: 10%;
+                                                                                  
+                                                                                }
+                                                                                
+                                                                                .post .title {
+                                                                                  text-align: left;
+                                                                                  width: 40%;
+                                                                                  
+                                                                                }
+                                                                                .post .post-meta {
+                                                                                  width: 25%;
+                                                                                  
+                                                                            }
+                                                                            */
+
+.post {
+  margin: 0 2em;
+}
+
+.post-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
