@@ -1,35 +1,24 @@
 ---
 layout: base
 ---
-<h2>A generally-nice* person in Chicago, Illinois.</h2>
 
-<p>Currently making tools at <a href="https://www.paypal.com/">PayPal</a> to help merchants run their businesses.</p>
-
-<p>Previously, I helped build <a href="https://carbonmade.com">Carbonmade</a>, <a href="https://www.groupon.com">Groupon</a>, <a href="https://www.kpcc.org">Southern California Public Radio</a>, and <a href="https://www.marketplace.org">Marketplace</a>.</p>
-
-<p>I push miscellaneous bits and pieces of what I’m working on to <a href="https://github.com/banterability">GitHub</a> and <a href="https://www.npmjs.com/~banterability">npm</a>.</p>
-
-<p>You can see what else I’m up to, in decreasing order of frequency, on <a href="https://www.instagram.com/banterability/">Instagram</a>, <a href="https://twitter.com/banterability">Twitter</a>, and <a href="https://www.linkedin.com/in/jeffreylong/">LinkedIn</a>.</p>
-
-<small>*hopefully</small>
+<h3>Elsewhere</h3>
+<ul>
+  <li>
+    <a href="https://github.com/banterability">GitHub</a>
+  </li>
+  <li>
+    <a href="https://www.npmjs.com/~banterability">npm</a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/banterability/">Instagram</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/banterability">Twitter</a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/jeffreylong/">LinkedIn</a>
+  </li>
+</ul>
 
 <p>Say hi: <code>hello@[this domain]</code>.</p>
-
-
-<h2>Latest post:</h2>
-{% for post in collections.post | published | reverse | limit(1) %}
-  <div class="date">{{ post.date | readableDate }}</div>
-    <a href="{{ post.url }}">
-      <div class="post-summary">
-        <div class="title">
-          {{ post.data.title }}
-        </div>
-        </a>
-        <div class="subtitle">
-        {{ post.data.description }}
-        </div>
-        <div class="minutes">{{ post.templateContent | readingTime }} minute read</div>
-      </div>
-  {% endfor %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
