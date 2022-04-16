@@ -12,12 +12,12 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-rss": "1.1.2",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "luxon": "^2.3.1",
     "mainspring": "^1.0.1",
     "markdown-it-anchor": "^8.6.2",
     "prettier": "^2.6.2",
     "reading-time": "^1.5.0",
-    "typogr": "^0.5.2"
+    "typogr": "^0.6.8"
   }
 }
