@@ -1,8 +1,9 @@
 {
-  "name": "bntr2k21",
+  "name": "banterability.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "@11ty/eleventy --serve",
     "prettier": "prettier --write ."
