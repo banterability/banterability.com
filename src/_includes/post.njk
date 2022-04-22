@@ -2,9 +2,11 @@
 layout: base
 ---
 
-<article class="post">
+<article>
   <h2>{{title}}</h2>
-  <abbr class="publishedAt" title="{{page.date}}">{{ page.date | readableDate }} | {{page.date | relativeDate }}</abbr>
+  <abbr title="{{page.date}}">utc: {{ page.date | readableDate }}</abbr>
+  <abbr title="{{page.date}}">local: {{page.date | localDateTime }}</abbr>
+  <abbr title="{{page.date}}">relative: {{page.date | relativeDate }}</abbr>
 
   {{ content | fixTypography | safe }}
 </article>
@@ -16,23 +18,23 @@ layout: base
 {% set nextPost = collections.post | getNextCollectionItem(page) %}
 
 <div>
-  Previous:
-{% if previousPost %}
-   <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-{% else %}
-  <em>none</em>
-{% endif %}
-</div>
-
-<a href="/writing">All Posts</a>
-
-<div>
   Next: 
   {% if nextPost %}
     <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
   {% else %}
     <em>none</em>
   {% endif %}
+</div>
+
+<a href="/writing">All Posts</a>
+
+<div>
+  Previous:
+{% if previousPost %}
+   <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+{% else %}
+  <em>none</em>
+{% endif %}
 </div>
 
 </div>

@@ -34,6 +34,11 @@ module.exports = function (eleventyConfig) {
     DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL dd")
   );
 
+  eleventyConfig.addFilter("localDateTime", (dateObj) =>
+    DateTime.fromJSDate(dateObj, { zone: "utc" })
+      .setZone("America/Chicago")
+      .toFormat("LLL dd, yyyy")
+  );
 
   eleventyConfig.addFilter("relativeDate", (dateObj) => {
     const daysAgo = mainspring(dateObj).days;
