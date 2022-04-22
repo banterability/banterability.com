@@ -1,16 +1,17 @@
 {
-  "name": "banterability.com",
-  "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
     "dev": "@11ty/eleventy --serve",
     "prettier": "prettier --write ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name" : "Jeff Long",
+    "email" : "hello@banterability.com",
+    "url" : "https://banterability.com/"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
@@ -19,5 +20,13 @@
     "markdown-it-anchor": "^8.6.2",
     "prettier": "^2.6.2",
     "typogr": "^0.6.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banterability/banterability.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banterability/banterability.com/issues"
+  },
+  "homepage": "https://github.com/banterability/banterability.com#readme"
 }
