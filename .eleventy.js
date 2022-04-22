@@ -1,6 +1,5 @@
 const { DateTime } = require("luxon");
 const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
-const readingTime = require("reading-time");
 const mainspring = require("mainspring");
 const typogr = require("typogr");
 
@@ -35,9 +34,6 @@ module.exports = function (eleventyConfig) {
     DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("LLL dd")
   );
 
-  eleventyConfig.addFilter("readingTime", (templateContent) =>
-    Math.ceil(readingTime(templateContent).minutes)
-  );
 
   eleventyConfig.addFilter("relativeDate", (dateObj) => {
     const daysAgo = mainspring(dateObj).days;
