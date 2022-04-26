@@ -12,6 +12,7 @@ My interests include:
 - computers
 - vinyl records
 - lawn care
+- 3-d printers
 
 [Contact me](#) if you want.
 
