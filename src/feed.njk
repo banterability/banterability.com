@@ -12,16 +12,16 @@ permalink: writing/feed.xml
   <updated>{{ posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>https://banterability.com/</id>
   <author>
-	<name>Jeff Long</name>
+    <name>Jeff Long</name>
   </author>
   {%- for post in posts %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
-	<title>{{ post.data.title }}</title>
-	<link href="{{ absolutePostUrl }}"/>
-	<updated>{{ post.date | dateToRfc3339 }}</updated>
-	<id>{{ absolutePostUrl }}</id>
-	<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}
 </feed>
