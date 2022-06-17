@@ -1,10 +1,10 @@
 /* PrismJS 1.28.0
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+erb+graphql+json+json5+markdown+markup-templating+jsx+ruby+typescript */
-code[class*=language-],
-pre[class*=language-] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: #ccc;
   background: 0 0;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -18,24 +18,24 @@ pre[class*=language-] {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  hyphens: none
+  hyphens: none;
 }
 
-pre[class*=language-] {
+pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
-  overflow: auto
+  margin: 0.5em 0;
+  overflow: auto;
 }
 
-:not(pre)>code[class*=language-],
-pre[class*=language-] {
-  background: #2d2d2d
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #2d2d2d;
 }
 
-:not(pre)>code[class*=language-] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
 }
 
 .token.block-comment,
@@ -43,35 +43,35 @@ pre[class*=language-] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-  color: #999
+  color: #999;
 }
 
 .token.punctuation {
-  color: #ccc
+  color: #ccc;
 }
 
 .token.attr-name,
 .token.deleted,
 .token.namespace,
 .token.tag {
-  color: #e2777a
+  color: #e2777a;
 }
 
 .token.function-name {
-  color: #6196cc
+  color: #6196cc;
 }
 
 .token.boolean,
 .token.function,
 .token.number {
-  color: #f08d49
+  color: #f08d49;
 }
 
 .token.class-name,
 .token.constant,
 .token.property,
 .token.symbol {
-  color: #f8c555
+  color: #f8c555;
 }
 
 .token.atrule,
@@ -79,7 +79,7 @@ pre[class*=language-] {
 .token.important,
 .token.keyword,
 .token.selector {
-  color: #cc99cd
+  color: #cc99cd;
 }
 
 .token.attr-value,
@@ -87,30 +87,30 @@ pre[class*=language-] {
 .token.regex,
 .token.string,
 .token.variable {
-  color: #7ec699
+  color: #7ec699;
 }
 
 .token.entity,
 .token.operator,
 .token.url {
-  color: #67cdcc
+  color: #67cdcc;
 }
 
 .token.bold,
 .token.important {
-  font-weight: 700
+  font-weight: 700;
 }
 
 .token.italic {
-  font-style: italic
+  font-style: italic;
 }
 
 .token.entity {
-  cursor: help
+  cursor: help;
 }
 
 .token.inserted {
-  color: green
+  color: green;
 }
 
 /* 
@@ -121,6 +121,7 @@ pre[class*=language-] {
 .token.inserted {
   background-color: hsl(120deg 73% 75% / 35%);
 }
+*/
 
 /* Make the + and - characters unselectable for copy/paste */
 .token.prefix.unchanged,
@@ -132,8 +133,9 @@ pre[class*=language-] {
 }
 
 /* Optional: full-width background color */
-/* .token.inserted:not(.prefix),
+/*
+.token.inserted:not(.prefix),
 .token.deleted:not(.prefix) {
   display: block;
-} */
+}
 */
