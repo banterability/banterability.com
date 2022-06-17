@@ -2,7 +2,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "@11ty/eleventy --serve",
+    "dev": "eleventy --serve",
     "prettier": "prettier --write ."
   },
   "author": {
