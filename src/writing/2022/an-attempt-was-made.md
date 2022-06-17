@@ -1,8 +1,10 @@
 ---
 title: An Attempt Was Made
 description: On trying this whole thing again
-date: 2022-04-04
+date: 2022-06-17
 ---
+
+basically just do the thing of course
 
 We're celebrating a birthday. In September, the first domain name I ever registered will be old enough to order a whiskey sour.
 

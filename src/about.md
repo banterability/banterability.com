@@ -15,6 +15,4 @@ My interests include:
 
 [Contact me](#) if you want.
 
-I have no outside hobbies bummer.
-
 If you found this vaguely interesting, [LinkedIn](#) is the place for you.

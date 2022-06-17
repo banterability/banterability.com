@@ -2,34 +2,28 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>
-			{% if title %}{{title}} &raquo; {% endif %}Banterability</title>
+		<title>{% if title %}{{title}} &raquo; {% endif %}Banterability</title>
 		<meta name="description" content="Banterability is Jeff Long.">
 		<meta name="author" content="Jeff Long">
 		<meta name="viewport" content="width=device-width">
 		<meta name="generator" content="{{ eleventy.generator }}">
-		<!-- generated: {{ generatedAt }} -->
+		<meta name="generatedAt" content="{{ generatedAt }}">
 
-
-		<link rel="stylesheet" href="/styles/global.css"/>
+		<link rel="stylesheet" href="/assets/styles/global.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7084114/6199432/css/fonts.css"/>
 		<link rel="stylesheet" href="/assets/styles/prism.css"/>
 	</head>
 	<body>
 		<div class="main-content">
-
 			<header>
 				<h1>
 					<a href="/">Banterability</a>
 				</h1>
 				<nav>
 					<ul>
-						<li>
-							<a {% if page.url == "/writing/" %}class="active" {% endif %} href="/writing">Writing</a>
-						</li>
-						<li>
-							<a {% if page.url == "/about/" %}class="active" {% endif %} href="/about">About</a>
-						</li>
+						<li><a {% if page.url == "/writing/" %}class="active" {% endif %}href="/writing">Writing</a></li>
+						<li><a {% if page.url == "/now/" %}class="active" {% endif %}href="/now">Now</a></li>
+						<li><a {% if page.url == "/about/" %}class="active" {% endif %}href="/about">About</a></li>
 					</ul>
 				</nav>
 			</header>

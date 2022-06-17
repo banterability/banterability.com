@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     markdownIt({ html: true }).use(markdownItAnchor)
   );
 
-  eleventyConfig.addFilter("fixTypography", (templateContent) => {
+  eleventyConfig.addFilter("typography", (templateContent) => {
     return typogr(templateContent).typogrify();
   });
 
@@ -36,8 +36,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", readableDate);
   eleventyConfig.addFilter("relativeDate", relativeDate);
 
-  eleventyConfig.addPassthroughCopy("src/fonts");
-  eleventyConfig.addPassthroughCopy("src/styles");
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addGlobalData("generatedAt", new Date());
 
