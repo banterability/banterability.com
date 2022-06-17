@@ -4,11 +4,14 @@ layout: base
 
 <article>
   <h2>{{title}}</h2>
-  <abbr title="{{page.date}}">utc: {{ page.date | readableDate }}</abbr>
-  <abbr title="{{page.date}}">local: {{page.date | localDateTime }}</abbr>
-  <abbr title="{{page.date}}">relative: {{page.date | relativeDate }}</abbr>
-
-  {{ content | fixTypography | safe }}
+  <ul>
+  <li><abbr title="{{page.date}}">dateToRfc3339: {{ page.date | dateToRfc3339 }}</abbr></li>
+  <li><abbr title="{{page.date}}">localDateTime: {{ page.date | localDateTime }}</abbr></li>
+  <li><abbr title="{{page.date}}">monthDay: {{ page.date | monthDay }}</abbr></li>
+  <li><abbr title="{{page.date}}">readableDate: {{ page.date | readableDate }}</abbr></li>
+  <li><abbr title="{{page.date}}">relativeDate: {{ page.date | relativeDate }}</abbr></li>
+  </ul>
+  {{ content | typography | safe }}
 </article>
 
 <hr />
