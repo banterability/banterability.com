@@ -1,19 +1,17 @@
 const { DateTime } = require("luxon");
-const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
 const mainspring = require("mainspring");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 const typogr = require("typogr");
+const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyFeedPlugin);
 
-  let markdownIt = require("markdown-it");
-  let markdownItAnchor = require("markdown-it-anchor");
-  let options = {
-    html: true,
-  };
-  let markdownLib = markdownIt(options).use(markdownItAnchor);
-
-  eleventyConfig.setLibrary("md", markdownLib);
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt({ html: true }).use(markdownItAnchor)
+  );
 
   eleventyConfig.addFilter("fixTypography", (templateContent) => {
     return typogr(templateContent).typogrify();
