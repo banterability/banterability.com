@@ -28,7 +28,15 @@ my hobby
 then my job
 then my career
 
+```diff-js
+function() {
+-  doSomething();
++  doSomethingElse();
+   finishTheThing();
+}
 ```
+
+```shell
 % whois banterability.com
 >   Creation Date: 2005-11-19T08:03:19Z
 ```

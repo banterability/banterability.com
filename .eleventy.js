@@ -2,6 +2,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const typogr = require("typogr");
 const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const {
   localDateTime,
@@ -12,6 +13,7 @@ const {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyFeedPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.setLibrary(
     "md",
