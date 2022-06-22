@@ -1,6 +1,5 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const typogr = require("typogr");
 const eleventyFeedPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -10,35 +9,25 @@ const {
   readableDate,
   relativeDate,
 } = require("./filters/datetime");
+const { typogrify } = require("./filters/typography");
+const { limit } = require("./filters/util");
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyFeedPlugin);
-  eleventyConfig.addPlugin(syntaxHighlight);
+module.exports = function (config) {
+  config.setLibrary("md", markdownIt({ html: true }).use(markdownItAnchor));
 
-  eleventyConfig.setLibrary(
-    "md",
-    markdownIt({ html: true }).use(markdownItAnchor)
-  );
+  config.addPlugin(eleventyFeedPlugin);
+  config.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addFilter("typography", (templateContent) => {
-    return typogr(templateContent).typogrify();
-  });
+  // config.addFilter("limit", limit);
+  config.addFilter("localDateTime", localDateTime);
+  config.addFilter("monthDay", monthDay);
+  config.addFilter("readableDate", readableDate);
+  config.addFilter("relativeDate", relativeDate);
+  config.addFilter("typography", typogrify);
 
-  eleventyConfig.addFilter("limit", (array, n) => {
-    if (!Array.isArray(array) || array.length === 0) {
-      return [];
-    }
-    return array.slice(0, n);
-  });
+  config.addPassthroughCopy("src/assets");
 
-  eleventyConfig.addFilter("localDateTime", localDateTime);
-  eleventyConfig.addFilter("monthDay", monthDay);
-  eleventyConfig.addFilter("readableDate", readableDate);
-  eleventyConfig.addFilter("relativeDate", relativeDate);
-
-  eleventyConfig.addPassthroughCopy("src/assets");
-
-  eleventyConfig.addGlobalData("generatedAt", new Date());
+  config.addGlobalData("generatedAt", new Date());
 
   return {
     dir: { input: "src" },

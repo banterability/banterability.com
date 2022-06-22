@@ -55,11 +55,12 @@ nav li {
 
 nav a {
   font-size: 1.75rem;
+  text-decoration: none;
 }
 
 nav .active {
-  text-decoration-color: rgb(65, 67, 89);
-  color: #fff;
+  font-style: italic;
+    /* color: rgba(255, 255, 255, 0.704); */
 }
 .chicago-star {
   color: #e4002b;
