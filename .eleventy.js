@@ -9,7 +9,7 @@ const {
   readableDate,
   relativeDate,
 } = require("./filters/datetime");
-const { typogrify } = require("./filters/typography");
+const { typography } = require("./filters/typography");
 const { limit } = require("./filters/util");
 
 module.exports = function (config) {
@@ -18,12 +18,12 @@ module.exports = function (config) {
   config.addPlugin(eleventyFeedPlugin);
   config.addPlugin(syntaxHighlight);
 
-  // config.addFilter("limit", limit);
+  config.addFilter("limit", limit);
   config.addFilter("localDateTime", localDateTime);
   config.addFilter("monthDay", monthDay);
   config.addFilter("readableDate", readableDate);
   config.addFilter("relativeDate", relativeDate);
-  config.addFilter("typography", typogrify);
+  config.addFilter("typography", typography);
 
   config.addPassthroughCopy("src/assets");
 
