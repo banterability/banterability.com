@@ -20,8 +20,6 @@ const relativeDate = (dateObj) => {
     ])
     .toObject();
 
-  console.log(delta);
-
   let unit;
   let value;
 
@@ -53,4 +51,3 @@ module.exports = {
   readableDate,
   relativeDate,
 };
-
