@@ -3,14 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "eleventy --serve",
-    "prettier": "prettier --write ."
+    "format": "prettier --write ."
   },
-  "author": {
-    "name" : "Jeff Long",
-    "email" : "hello@banterability.com",
-    "url" : "https://banterability.com/"
-  },
-  "license": "UNLICENSED",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
@@ -24,8 +18,8 @@
     "type": "git",
     "url": "git+https://github.com/banterability/banterability.com.git"
   },
-  "bugs": {
-    "url": "https://github.com/banterability/banterability.com/issues"
-  },
-  "homepage": "https://github.com/banterability/banterability.com#readme"
+  "homepage": "https://github.com/banterability/banterability.com#readme",
+  "engines": {
+    "node": "18"
+  }
 }
